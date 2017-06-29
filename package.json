@@ -1,6 +1,6 @@
 {
   "name": "fz-atom-react-snippet",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "React ES6 snippets for atom",
   "keywords": [
     "react",
