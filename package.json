@@ -1,0 +1,17 @@
+{
+  "name": "fz-atom-react-snippet",
+  "version": "0.0.1",
+  "description": "React ES6 snippets for atom",
+  "keywords": [
+    "react",
+    "ES6",
+    "babel",
+    "snippets"
+  ],
+  "repository": "https://github.com/vimalceg/fz-atom-react-snippet",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
+}
