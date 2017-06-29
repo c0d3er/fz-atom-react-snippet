@@ -1,0 +1,234 @@
+'.source.js.jsx':
+  'React ES6 Component with Constructor':
+    'prefix': 'component'
+    'body': """
+      import React, { Component } from 'react';
+      import PropTypes from 'prop-types';
+      export default class ${1:MyComponent} extends Component {
+        constructor(props) {
+          super(props);
+        }
+        render() {
+          return (${2:<div>MyComponent</div>});
+        }
+      }
+      ${1}.propTypes = {
+      };
+    """
+  'React ES6 connect Component with Constructor':
+    'prefix': 'connnect_component'
+    'body': """
+      import React, { Component } from 'react';
+      import PropTypes from 'prop-types';
+      class ${1:MyComponent} extends Component {
+        constructor(props) {
+          super(props);
+        }
+        render() {
+          return (${2:<div>MyComponent</div>});
+        }
+      }
+      ${1}.propTypes = {
+      };
+      function mapStateToProps(state,props){
+        return {}
+      }
+      function mergeProps(stateProps,dispatchProps,props){
+        return {}
+      }
+      function mergeProps
+      export default connect(mapStateToProps,{},mergeProps)(${1})
+    """
+  'React ES6 Functional Component':
+    'prefix': 'func_component'
+    'body': """
+      import React from 'react';
+      import PropTypes from 'prop-types';
+      export default function ${1}(props) {
+        return (
+          ${2:<div>MyComponent</div>}
+        );
+      }
+      ${1}.propTypes = {
+      };
+    """
+  'React ES6 Atom Component with Constructor':
+    'prefix': 'atom'
+    'body': """
+      import React, { Component } from 'react';
+      import PropTypes from 'prop-types';
+      export default class ${1:MyComponent} extends Component {
+        constructor(props) {
+          super(props);
+        }
+        render() {
+          return (${2:<div>MyComponent</div>});
+        }
+      }
+      if(__DOCS__){
+        ${1}.docs = {
+          componentGroup:"Atom"
+        };
+      }
+    """
+  'React ES6 Molecule Component with Constructor':
+    'prefix': 'molecule'
+    'body': """
+      import React, { Component } from 'react';
+      import PropTypes from 'prop-types';
+      export default class ${1:MyComponent} extends Component {
+        constructor(props) {
+          super(props);
+        }
+        render() {
+          return (${2:<div>MyComponent</div>});
+        }
+      }
+      if(__DOCS__){
+        ${1}.docs = {
+          componentGroup:"Molecule"
+        };
+      }
+    """
+  'React ES6 Organism Component with Constructor':
+    'prefix': 'organism'
+    'body': """
+      import React, { Component } from 'react';
+      import PropTypes from 'prop-types';
+      export default class ${1:MyComponent} extends Component {
+        constructor(props) {
+          super(props);
+        }
+        render() {
+          return (${2:<div>MyComponent</div>});
+        }
+      }
+      if(__DOCS__){
+        ${1}.docs = {
+          componentGroup:"Organism"
+        };
+      }
+    """
+  'React ES6 Template Component with Constructor':
+    'prefix': 'temp'
+    'body': """
+      import React, { Component } from 'react';
+      import PropTypes from 'prop-types';
+      export default class ${1:MyComponent} extends Component {
+        constructor(props) {
+          super(props);
+        }
+        render() {
+          return (${2:<div>MyComponent</div>});
+        }
+      }
+      if(__DOCS__){
+        ${1}.docs = {
+          componentGroup:"Template"
+        };
+      }
+    """
+  'React ES6 Page Component with Constructor':
+    'prefix': 'page'
+    'body': """
+      import React, { Component } from 'react';
+      import PropTypes from 'prop-types';
+      export default class ${1:MyComponent} extends Component {
+        constructor(props) {
+          super(props);
+        }
+        render() {
+          return (${2:<div>MyComponent</div>});
+        }
+      }
+      if(__DOCS__){
+        ${1}.docs = {
+          componentGroup:"Page"
+        };
+      }
+    """
+  #     'React ES6 bind method to this':
+  #       'prefix': 'rbm',
+  #       'body': """
+  #         this.${1} = this.${1}.bind(this);
+  #       """
+  #     'React ES6 props definition':
+  #       'prefix': 'rpd',
+  #       'body': """
+  #         ${1}.propTypes = {
+  #           ${2}
+  #         };
+  #       """
+  #
+  #
+  # # PropType string
+  # 'React PropType string':
+  #   'prefix': 'rpstr',
+  #   'body': "${1:myProp}: PropTypes.string,"
+  # 'React PropType string required':
+  #   'prefix': 'rpstrr',
+  #   'body': "${1:myProp}: PropTypes.string.isRequired,"
+  #
+  # # PropType number
+  # 'React PropType number':
+  #   'prefix': 'rpn',
+  #   'body': "${1:myProp}: PropTypes.number,"
+  # 'React PropType number required':
+  #   'prefix': 'rpnr',
+  #   'body': "${1:myProp}: PropTypes.number.isRequired,"
+  #
+  # # PropType object
+  # 'React PropType object':
+  #   'prefix': 'rpo',
+  #   'body': "${1:myProp}: PropTypes.object,"
+  # 'React PropType object required':
+  #   'prefix': 'rpor',
+  #   'body': "${1:myProp}: PropTypes.object.isRequired,"
+  #
+  # # PropType array
+  # 'React PropType array':
+  #   'prefix': 'rpa',
+  #   'body': "${1:myProp}: PropTypes.array,"
+  # 'React PropType array required':
+  #   'prefix': 'rpar',
+  #   'body': "${1:myProp}: PropTypes.array.isRequired,"
+  #
+  # # PropType bool
+  # 'React PropType bool':
+  #   'prefix': 'rpb',
+  #   'body': "${1:myProp}: PropTypes.bool,"
+  # 'React PropType bool required':
+  #   'prefix': 'rpbr',
+  #   'body': "${1:myProp}: PropTypes.bool.isRequired,"
+  #
+  # # PropType element
+  # 'React PropType element':
+  #   'prefix': 'rpe',
+  #   'body': "${1:myProp}: PropTypes.element,"
+  # 'React PropType element required':
+  #   'prefix': 'rper',
+  #   'body': "${1:myProp}: PropTypes.element.isRequired,"
+  #
+  # # PropType function
+  # 'React PropType function':
+  #   'prefix': 'rpf',
+  #   'body': "${1:myProp}: PropTypes.func,"
+  # 'React PropType function required':
+  #   'prefix': 'rpfr',
+  #   'body': "${1:myProp}: PropTypes.func.isRequired,"
+  #
+  # # PropType shape
+  # 'React PropType shape':
+  #   'prefix': 'rps',
+  #   'body': """
+  #     ${1:myProp}: PropTypes.shape({
+  #       ${2}
+  #     }),
+  #   """
+  # 'React PropType shape required':
+  #   'prefix': 'rpsr',
+  #   'body': """
+  #     ${1:myProp}: PropTypes.shape({
+  #       ${2}
+  #     }).isRequired,
+  #   """
