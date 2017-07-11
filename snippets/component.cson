@@ -20,6 +20,7 @@
     'body': """
       import React, { Component } from 'react';
       import PropTypes from 'prop-types';
+      import { connect } from 'react-redux';
       class ${1:MyComponent} extends Component {
         constructor(props) {
           super(props);
@@ -36,7 +37,6 @@
       function mergeProps(stateProps,dispatchProps,props){
         return {}
       }
-      function mergeProps
       export default connect(mapStateToProps,{},mergeProps)(${1})
     """
   'React ES6 Functional Component':
